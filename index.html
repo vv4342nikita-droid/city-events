@@ -1,17 +1,65 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Афіша подій міста</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <!-- Шапка з назвою і навігацією -->
-    <!-- Блок фільтра за датою/категорією -->
-    <!-- Список подій (картки) -->
+    <header>
+        <h1>Афіша подій міста</h1>
+        <nav>
+            <a href="#events">Усі події</a>
+            <a href="#filters">Фільтр подій</a>
+        </nav>
+    </header>
+
+    <!-- Основний вміст сторінки -->
+    <main>
+        <!-- Блок фільтра за датою/категорією -->
+        <section id="filters">
+            <h2>Фільтр подій</h2>
+            <form>
+                <label for="category">Категорія:</label>
+                <input type="text" id="category" placeholder="Концерт, виставка...">
+
+                <label for="date">Дата:</label>
+                <input type="date" id="date">
+            </form>
+        </section>
+
+        <!-- Список подій (картки) -->
+        <section id="events">
+            <h2>Список подій</h2>
+            <article>
+                <h3>Концерт симфонічного оркестру</h3>
+                <p>Дата: 15 жовтня 2026. Місце: Філармонія.</p>
+            </article>
+
+            <article>
+                <h3>Виставка сучасного мистецтва</h3>
+                <p>Дата: 20 жовтня 2026. Місце: Арт-галерея.</p>
+            </article>
+        </section>
+    </main>
+
     <!-- Блок деталей обраної події -->
+    <aside id="event-details">
+        <h2>Деталі обраної події</h2>
+        <article>
+            <h3>Концерт симфонічного оркестру</h3>
+            <p><strong>Дата та час:</strong> 15 жовтня 2026, 19:00</p>
+            <p><strong>Місце проведення:</strong> Національна філармонія України</p>
+            <p><strong>Опис:</strong> Вечір класичної музики. У програмі твори всесвітньо відомих композиторів.</p>
+        </article>
+    </aside>
+
     <!-- Підвал -->
+    <footer>
+        <p>Автор проєкту: Гунько Нікіта, 2026</p>
+    </footer>
 
     <script src="js/app.js"></script>
 </body>
